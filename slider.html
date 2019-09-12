@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+  html {line-height: 1.15; -webkit-text-size-adjust: 100%;}body {margin: 0;font-family: arial;background: #2e3439}
+
+
+  .mySlides {display:none;background:#2E3439;width:100%;height:auto;padding-bottom: 80px}
+  .slider_title{font-family: Arial;font-size: 38px;color: #fff;font-weight: 500;text-align: center;margin:0 0 20px;padding-top:35px;line-height: 1.2}
+  .wrapper{display: flex;justify-content: center;flex-wrap: wrap;}
+  .stats-name{text-align: center;color: #fff;font-size: 18px;font-family: arial} 
+  .stats-img{position: relative;}
+  .stats-value {font-family: arial;color: #fff;font-size: x-large;position: absolute;top: 53%;transform: translate(-50%,-50%);text-align: center;left: 50%;}
+
+  #sec1{display: flex;justify-content: flex-end;}
+  .sec1,.sec2,.sec3{width: 33.33333%}
+
+/* Slider2 section 1 start */
+  .element {position: relative;width: 255px;height: 255px;}
+  .inner{position: absolute;top: 0;bottom: 0;right: 0;left: 0;display: flex;justify-content: center;align-items: center;flex-direction: column;width: 200px;height: 200px;margin: auto;}
+  img.cookie-img {width: 64px;height:64px;}
+  span.number{font-size: 48px;font-weight: bold;color: #fff;display: block;margin-bottom: 10px;}
+  .value-txt {font-size: 25px;color: #fff;position: absolute;bottom: 0;width: 100%;text-align: center;}
+  .jchart, .jchart__figure{width:255px;;margin: 0}
+/* Slider2 section 1 end */
+
+/* Slider2 section 2 start */
+  .bar-chart{width:100%;margin: 0 auto;}
+  .bar {width: 100%;background-color: #4e4e4e;border-radius: 5rem;height: 28px;filter: drop-shadow(4px 4px 4px #333);margin-bottom: 30px;display: flex;align-items: center;font-size: 14px;}
+  .cookie-type-necessary {background-color: #87cfe1;width:1%; height: 28px;padding:0 5px;border-radius: 5rem 0 0 5rem;}
+  .cookie-type-performance {background-color: #3eb3cf;width:5%; height: 28px;padding:0 5px;border-radius: 5rem 0 0 5rem;}
+  .cookie-type-functionality {background-color: #0a7089;width:3%; height: 28px;padding:0 5px;border-radius: 5rem 0 0 5rem;}
+  .cookie-type-targeting{background-color: #075062;width:58%; height: 28px;padding:0 5px;border-radius: 5rem 0 0 5rem}
+  .cookie-type-unknown {background-color: #032027;width:32%; height: 28px;padding:0 5px;border-radius: 5rem 0 0 5rem}
+  .bar-percentage{color: #fff;font-size: 14px;font-weight: 500;margin-left: 1%;}
+/* Slider2 section 2 end */
+
+
+/* Slider2 section 3 start */
+.clearfix:after,.clearfix:before{content:" ";display:table}.clearfix:after{clear:both}
+    .half{width: 50%;float: left;}
+    .top_sec, .bottom_sec{width: 55%;margin: 0 auto;position: relative;margin-bottom: 20px}
+    
+    .smallimg{position: absolute;top: 0;bottom: 0;right: 0;left: 0;display: flex;flex-direction: column;align-items: center;justify-content: space-evenly;}
+    .cookie-types-sub-head{color: #fff;}
+    .values{color: #fff;}
+/* Slider2 section 3 end */
+
+@media only screen and (orientation: portrait) {
+  .wrapper {display: flex;justify-content: center;flex-wrap: wrap;text-align: center;flex-direction: column;align-items: center;}
+  #sec1{justify-content: center;}
+  .sec1, .sec2, .sec3{width: 75%;margin-bottom: 30px}
+  .half{width: 100%}
+  .mySlides{width: 90%;margin: 0 auto;}
+  .stats-img{margin-top: 25px}
+
+
+
+  .slider_title {font-size: 32px}
+}
+
+</style>
+<body>
+<div>
+  <div class="mySlides">
+  	<h1 class="slider_title">Largest Database of Pre-Categorized Cookies</h1>
+    <div class="wrapper">
+      <div class="">
+        <div class="stats-img">
+          <img src="https://cookiepedia.co.uk/Images/1-full.png" width="200px" height="330px">
+          <div class="stats-value">1</div>
+        </div>
+        <div class="stats-name ">Cookies</div>
+      </div>
+      <div class="">
+        <div class="stats-img">
+          <img src="https://cookiepedia.co.uk/Images/2-full.png" width="200px" height="330px">
+          <div class="stats-value">1</div>
+        </div>
+        <div class="stats-name">1st Party Cookies</div>
+      </div>
+      <div class="">
+        <div class="stats-img">
+          <img src="https://cookiepedia.co.uk/Images/3-full.png" width="200px" height="330px">
+          <div class="stats-value">1</div>
+        </div>
+        <div class="stats-name">3rd Party Cookies</div>
+      </div>
+      <div class="">
+        <div class="stats-img">
+          <img src="https://cookiepedia.co.uk/Images/4-full.png" width="200px" height="330px">
+          <div class="stats-value">1</div>
+        </div>
+        <div class="stats-name">Session Cookies</div>
+      </div>
+      <div class="">
+        <div class="stats-img">
+          <img src="https://cookiepedia.co.uk/Images/5-full.png" width="200px" height="330px">
+          <div class="stats-value">1</div>
+        </div>
+        <div class="stats-name">Persistent Cookies</div>
+      </div>
+    </div>
+  </div>
+  <div class="mySlides">
+  	<h1 class="slider_title">Website Benchmarks from Cookiepedia</h1>
+    <div class="wrapper">
+      <div class="sec1" id="sec1">
+          <div id="element1" class="element">
+            <div class="inner">
+                <img class="cookie-img" src="https://cookiepedia.co.uk/Images/Cookie-white.png">
+                <span class="number">28</span>
+            </div>
+            <div class="value-txt">Cookies Per Site </div>
+          </div>
+          
+
+        <script src="js/jquery-3.2.1.min.js" type="text/javascript"> integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <!-- Main -->
+        <script src="js/jquery.jchart.js" type="text/javascript"></script>
+        <!-- /Main -->
+        <script>let jchart1;$(function(){jchart1=$("#element1").jChart({data:[{value:1,color:{normal:'#87cfe1',active:'#87cfe1',},},{value:5,color:{normal:'#3eb3cf',active:'#3eb3cf',},},{value:3,color:{normal:'#0a7089',active:'#0a7089',},},{value:58,color:{normal:'#075062',active:'#075062',},},{value:32,color:{normal:'#032027',active:'#032027',}}],appearance:{type:'donut',subType:'path',baseColor:'#fff',radius:100/(2*Math.PI),gap:1,baseStrokeWidth:0.5,},callbacks:{onSegmentMouseover:function(did,segment){}}})});</script>
+
+      </div>
+      <div class="sec2">
+        <div class="bar-chart">
+          <div class="bar">
+              <div class="cookie-type-necessary"></div>
+              <p class="bar-percentage"> 1% Strictly Necessary Cookies</p>
+          </div>
+
+          <div class="bar">
+              <div class="cookie-type-performance"></div>
+              <p class="bar-percentage">5% Performance Cookies</p>
+          </div>
+
+          <div class="bar">
+              <div class="cookie-type-functionality"></div>
+              <p class="bar-percentage">3% Functionality Cookies</p>
+          </div>
+
+          <div class="bar">
+              <div class="cookie-type-targeting"></div>
+              <p class="bar-percentage">58% Targeting Cookies</p>
+          </div>
+
+          <div class="bar">
+              <div class="cookie-type-unknown"></div>
+              <p class="bar-percentage">32% Unknown Cookies</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="sec3">
+        <div class="main_wrap clearfix">
+            <div class="half">
+                <div class="top_sec">
+                 <img class="ring1" src="https://cookiepedia.co.uk/Images/ring.png" width="100%">
+                  <div class="smallimg">
+                    <img class="FirstParty" src="https://cookiepedia.co.uk/Images/1stParty.png" width="30px" height="34px">
+                    <span class="values">36%</span>
+                  </div>
+                  <div class="cookie-types-sub-head">1st Party Cookies</div>
+                </div>
+                <div class="bottom_sec">
+                  <img class="ring1" src="https://cookiepedia.co.uk/Images/ring.png"  width="100%">
+                    <div class="smallimg">
+                      <img class="FirstParty" src="https://cookiepedia.co.uk/Images/SessionCookie.png" width="30px" height="29px">
+                      <span class="values">29%</span>
+                    </div>
+                    <div class="cookie-types-sub-head">1st Party Cookies</div>
+                </div>
+            </div>
+            <div class="half">
+                <div class="top_sec">
+                 <img class="ring1" src="https://cookiepedia.co.uk/Images/ring.png"  width="100%">
+                  <div class="smallimg">
+                    <img class="FirstParty" src="https://cookiepedia.co.uk/Images/3rdparty.png" width="47px" height="26px">
+                    <span class="values">64%</span>
+                  </div>
+                  <div class="cookie-types-sub-head">1st Party Cookies</div>
+                </div>
+                <div class="bottom_sec">
+                  <img class="ring1" src="https://cookiepedia.co.uk/Images/ring.png" width="100%">
+                    <div class="smallimg">
+                      <img class="FirstParty" src="https://cookiepedia.co.uk/Images/PersistentCookie.png" width="30px" height="30px">
+                      <span class="values">71%</span>
+                    </div>
+                    <div class="cookie-types-sub-head">1st Party Cookies</div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <button class="btn-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="btn-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+
+
+<script>
+var myIndex = 0;
+carousel();
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html>
